@@ -17,9 +17,9 @@ export const Home = () => {
             setExercises={setExercises}
          />
          <Exercises
-            bodyPart={bodyPart}
-            setBodyPart={setBodyPart}
+            exercises={exercises}
             setExercises={setExercises}
+            bodyPart={bodyPart}
          />
       </Box >
    )
