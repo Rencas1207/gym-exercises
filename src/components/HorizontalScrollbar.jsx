@@ -27,6 +27,7 @@ const RightArrow = () => {
 };
 
 export const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
+
    return (
       <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
          {
