@@ -15,6 +15,8 @@ export const ExerciseDetail = () => {
    const { id } = useParams();
 
    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
       const fetchExercisesData = async () => {
          const exerciseDbUrl = 'https://exercisedb.p.rapidapi.com';
          const youtubeSearchUrl = 'https://youtube-search-and-download.p.rapidapi.com'
@@ -38,9 +40,6 @@ export const ExerciseDetail = () => {
 
       fetchExercisesData();
    }, [id])
-
-   console.log(targetMuscleExercises);
-   console.log(equipmentExercises)
 
    return (
       <Box >
