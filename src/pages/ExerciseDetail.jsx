@@ -32,11 +32,15 @@ export const ExerciseDetail = () => {
          setTargetMuscleExercises(targetMuscleExercisesData);
 
          const equimentExercisesData = await fetchData(`${exerciseDbUrl}/exercises/equipment/${exerciseDetailData.equipment}`, exerciseOptions);
+
          setEquipmentExercises(equimentExercisesData);
       }
 
       fetchExercisesData();
    }, [id])
+
+   console.log(targetMuscleExercises);
+   console.log(equipmentExercises)
 
    return (
       <Box >
