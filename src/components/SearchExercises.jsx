@@ -30,6 +30,8 @@ export const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             || exercise.bodyPart.toLowerCase().includes(search)
          )
 
+         window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
+
          setSearch('');
          setExercises(searchedExercises);
       }
@@ -75,6 +77,7 @@ export const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
                data={bodyParts}
                bodyPart={bodyPart}
                setBodyPart={setBodyPart}
+               bodyParts={bodyParts}
             />
          </Box>
       </Stack>
